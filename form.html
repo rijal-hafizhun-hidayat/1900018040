@@ -4,76 +4,34 @@
 	<title>formulir</title>
 </head>
 <body>
-
-	<center><h2>pendataan mahasiswa UAD reknik informatika domisili jawa barat</h2></center>
-	<div>
-			<center>
-				<tr>
-				<form>
-					<td>
-					<div>
-					<pre>	
-<label for="nama">nama				:</label><input type="text" id="nama">
-					</pre>
-
-					</div>
-
-					<div>
-						<pre>
-<label for="alamat">alamat				:</label><input type="text" id="alamat">
-						</pre>
-					</div>
-
-					<div>
-						<pre>
-<label for="telp">telp 				:</label><input type="text" id="telp">
-						</pre>
-					</div>
-
-					<div>
-						<pre>
-<label for="jenis kelamin">jenis kelamin		    :</label><label for="laki">laki</label><input type="radio" name="jenis kelamin" id="laki"><label for="perempuan">perempuan</label><input type="radio" name="jenis kelamin" id="perempuan">
-						</pre>
-					</div>
-
-					<div>
-						<pre>
-<label for="agama">agama				:</label><select>
-									<option>islam</option>
-									<option>kriste protestan</option>
-									<option>katolik</option>
-									<option>hindu</option>
-							  		<option>buddha</option>
-									<option>kong hu cu</option>
-									<option>satanic</option>
-								</select>
-						</pre>
-					</div>
-						<br>
-					<div>
-						<label for="bahasa">jenis bahasa yg di pahami: </label>
-						<label for="html">HTML</label><input type="checkbox" name="bahasa" id="html">
-						<label for="css">CSS</label><input type="checkbox" name="bahasa" id="css">
-						<label for="javascript">JAVASCRIPT</label><input type="checkbox" name="javascript">
-						<label for="php">PHP</label><input type="checkbox" name="php">
-					</div>
+	<h3>form pendaftaran</h3>
+	<form method="post" action="index.php">
+		<table  border="1" cellspacing="0" cellpadding="4">
+			<tr>
+				<td>
+					<label for="nama">nama: </label><input type="text" name="nama">
+					 <br>
+					<label for="alamat">alamat: </label><input type="text" name="alamat">
+					 <br>
+					<label for="telp">telp: </label><input type="text" id="telp" name="telp">
 					<br>
-
-					<div>
-						<pre>
-<label for="prestasi yang pernah di raih">prestasi yang pernah di raih	:</label><textarea></textarea>
-					</div>
-						</pre>
-						<br><br>
-
-						<pre>	
-				<button type="button" onclick="alert('data anda telah di submmit')">simpan</button> <button type="button" onclick="alert('batal mengisi form')">batal</button>
-					</pre>
-					</td>
-				</div>
-				</form>
+					<label for="jenis kelamin">jenis kelamin: </label><label for="laki">laki</label><input type="radio" name="jeniskelamin" value="laki">
+					<label for="perempuan">perempuan</label><input type="radio" name="jeniskelamin" value="perempuan">
+					<br>
+					<label for="agama">agama:</label>
+					<select name="agama">
+						<option>islam</option>
+						<option>kristen</option>
+					</select>
+					<br>
+					<label for="prestasi yang pernah di raih">prestasi yang pernah di raih	:</label><textarea name="area"></textarea>
+					<br>
+					<button type="submit" onclick="alert('data berhasil input, silahkan cek outputnya')" name="simpan">simpan</button> 
+					<button type="submit" onclick="alert('batal mengisi form')" name="batal" ><a href="form.html">batal</a></button>
+				</td>
 			</tr>
-		</center>	
-	</div>
+		</table>
+	</form>
+
 </body>
 </html>
