@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form pendaftaran UT TRAKTORS</title>
+	<link rel="stylesheet" type="text/css" href="formnew.css">
+</head>
+<body>
+	<div class="container">
+		<center><h2>FORM PENDAFTARAN KARYAWAN UT TRAKTOR</h2></center>
+		<div class="isi">
+			<form action="data.php" method="post" enctype="multipart/form-data" onsubmit="menuju()">
+				<label>nama lengkap:</label><br>
+				<input type="text" name="nama" id="nama"><br>
+				<br>
+				<label>umur:</label><br>
+				<input type="number" name="umur" max="50" id="umur" placeholder="maximal umur 50"><br>
+				<br>
+				<label>alamat (sesuai ktp):</label><br>
+				<input type="text" name="alamat" id="alamat"><br>
+				<br>
+				<label>no.telp:</label><br>
+				<input type="number" name="telp" id="telp"><br>
+				<br>
+				<label>agama:</label><br>
+				<input type="text" name="agama" id="agama"><br>
+				<br>
+				<label>jenis kelamin:</label>
+				<input type="radio" name="jeniskelamin" value="laki-laki" id="jeniskelamin">laki-laki
+				<input type="radio" name="jeniskelamin" value="perempuan" id="jeniskelamin">perempuan<br>
+				<br>
+				<label>status marital:</label><br>
+				<input type="text" name="status" id="status"><br>
+				<br>
+				<label>nomor ktp:</label><br>
+				<input type="number" name="nomorktp" id="nomorktp"><br>
+				<br>
+				<label>upload foto 4 x 6:</label>
+				<input type="file" name="upload" accept="image/*" id="upload"><br>
+				<br>
+				<button type="submit" name="simpan">submit</button>
+			</form>
+			<script type="text/javascript">
+				function menuju(){
+					var nama=document.getElementById('nama').value;
+					var umur=document.getElementById('umur').value;
+					var alamat=document.getElementById('alamat').value;
+					var telp=document.getElementById('telp').value;
+					var agama=document.getElementById('agama').value;
+					var jeniskelamin=document.getElementById('jeniskelamin').value;
+					var status=document.getElementById('status').value;
+					var nomorktp=document.getElementById('nomorktp').value;
+					var upload=document.getElementById('upload').value;
+					if (!nama) {
+						alert("nama harus di input");
+					}
+					if (!umur) {
+						alert("umur harus di input");
+					}
+					if (!alamat) {
+						alert("alamat harus di input");
+					}
+					if (!telp) {
+						alert("nomor telpon harus di input");
+					}
+					if (!agama) {
+						alert("agama harus di input");
+					}
+					if (!jeniskelamin) {
+						alert("jenis kelamin harus di input");
+					}
+					if (!status) {
+						alert("status maritas harus di input");
+					}
+					if (!nomorktp) {
+						alert("nomor ktp harus di input");
+					}
+					if (!upload) {
+						alert("foto harus di input");
+					}
+				}
+			</script>
+		</div>
+	</div>
+</body>
+</html>
