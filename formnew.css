@@ -1,0 +1,30 @@
+body{
+	background-image: url(herringbone.png); 
+	font-family: sans-serif;
+}
+.container{
+	margin: 150px auto;
+	background-color: #ffffff;
+	width: 450px;
+	padding: 20px;
+	padding: auto;
+	border-radius: 10px;
+	opacity: 5; 
+}
+button{
+	font-size: 15px;
+	cursor: pointer;
+	background: #38B7EE;
+	border-radius: 5px;
+	color: white;
+	height: 40px;
+	width: 100px;
+	border: 1px; 
+}
+input[type="text"],input[type="number"]{
+	width: 400px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #aaa; 
+
+}
