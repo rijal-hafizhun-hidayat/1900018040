@@ -62,7 +62,7 @@
 						echo "<tr><td>&nbsp;</td></tr>";
 					echo "</table>";
 				echo "</div>";
-				echo "<div class='tambah'><button><a href='index.html'>overwrite data</a></button></div>";
+				echo "<div class='tambah'><button><a href='form.html'>overwrite data</a></button></div>";
 			echo "</center>";
 		fclose($fp);
 
