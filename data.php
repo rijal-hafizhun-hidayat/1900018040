@@ -8,7 +8,7 @@
 	<?php 
 		$nama=$alamat=$umur=$telp=$agama=$jeniskelamin=$status=$nomorktp=$upload="";
 
-		$fp=fopen("karyawan.txt", "w");
+		$fp=fopen("karyawan.txt", "a+");
 
 		if ($_SERVER['REQUEST_METHOD']=='POST') {
 			if (empty(trim($_POST['nama']))) {
@@ -68,7 +68,7 @@
 				move_uploaded_file($tmp_file, $upload);
 			}
 		}
-		fputs($fp,$nama." | ".$alamat." | ".$umur." | ".$telp." | ".$agama." | ".$jeniskelamin." | ".$status." | ".$nomorktp." | ".$upload." |");
+		fputs($fp,$nama." | ".$alamat." | ".$umur." | ".$telp." | ".$agama." | ".$jeniskelamin." | ".$status." | ".$nomorktp." | ".$upload." \n");
 		fclose($fp);
 		include 'tabel.php';
 	?>
